@@ -58,10 +58,11 @@
   
 footer {
     background-color: #00bfff;
-    max-width: 1200px;
-    margin:0 auto;
     min-height: 50px;
+    min-width: 1200px;
+    margin:0 auto;
   }
+  
   
 
   legend{

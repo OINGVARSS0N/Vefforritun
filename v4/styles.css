@@ -1,0 +1,181 @@
+/* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Reiknum stærð á öllum boxum sem border-box */
+  html {
+    box-sizing: border-box;
+  
+    /* Lætur skroll innan síðu taka tíma */
+    scroll-behavior: smooth;
+  }
+  
+  /* og látum erfast á allt */
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* Breytur sem skal nota */
+  
+  :root {
+    /* Grunn bilið okkar er 1rem == 16px */
+    --spacing: 1rem;
+    /* Hámarksbreidd á efni */
+    --max-width: 1200px;
+  
+    --color-primary: #f0f0f8;
+  
+    --color-header: #fff;
+    --color-text: #000;
+    --color-border: #ccc;
+  
+    /* Letur stillingar */
+    --font-base-body-px: 16px;
+    --font-base-size: 1rem;
+    --font-family-base: 'Nunito', Helvetica, Arial, sans-serif;
+    --font-family-heading: 'Domine', Georgia, serif;
+  }
+  
+  body {
+    color: var(--color-text);
+    font-size: var(--font-base-body-px);
+    line-height: 1.5;
+    font-family: var(--font-family-base);
+  }
+  
+  h1, h2, h3 {
+    font-family: var(--font-family-heading);
+  }
+  
+  img {
+    max-width: 100%;
+  }
+
+.efri-mynd{
+  transform: rotate(3deg);
+  max-height: 400px;
+  max-width: 50%;
+}
+
+  .nedri-mynd{
+    order: -1;
+    transform: rotate(-3deg);
+    max-height: 400px;
+    max-width: 50%;
+  }
+
+  .button {
+    display: inline-block;
+    background-color: #f0f0f0ff;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #000;
+    padding: var(--spacing);
+    color:var(--color-border#ccc) 
+  }
+
+  .buttonspil{
+    padding: 8px;
+  }
+  
+  .button-secondary {
+    border: none;
+    background-color: #fff;
+  }
+  
+  
+  main {
+    margin: 0 auto;
+    max-width: var(--max-width);
+  }
+  
+  .info{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: var(--color-text);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 8rem;
+  }
+
+  .info-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing) * 4);
+  }
+
+  .div-info{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+  }
+  
+  
+  header {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/v4/myndir/header.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+  }
+
+  footer{
+    min-height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #ccc;
+    margin-top: 2%;
+  }
+  
+  .kicker{
+    font-family: var(--font-family-heading);
+    text-transform: uppercase;
+  }
+
+  .cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:1rem;
+  }
+
+  .card {
+    max-width: 49%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border: 1px solid #ccc
+  }
+
+  .card>p{
+    flex-grow: 1;
+  }
+
+  .spil{
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .spilamyndir{
+    order: -1;    
+  }
+
+  .spilamyndir > img {
+    height: 350px;
+    object-fit: cover;
+    width:  100%;
+  }

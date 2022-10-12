@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="is">
+  <head>
+    <meta charset="utf-8" />
+    <title>Könnun</title>
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="../index.html">Forsíða</a>
+      <a href="./baekur.html">Bækur</a>
+      <a href="./konnun.html">Könnun</a>
+      <a href="./um.html">Um forrit</a>
+    </div>
+    <fieldset>
+      <legend>Reynsla af forritun</legend>
+      <div>
+        <label for="forritunarmál">Forritunarmál sem ég kann best</label>
+        <select name="cars" id="forritunarmál">
+        </fieldset>
+        <datalist id="forritunarmál">
+          <option value="Python">Python</option>
+          <option value="C++">C++</option>
+          <option value="Java">Java</option>
+          <option value="C">C</option>
+          <option value="C#">C#</option>
+          <option value="PHP">PHP</option>
+          <option value="R">R</option>
+          <option value="JavaScript">Javascript</option>
+          <option value="Go">Go</option>
+          <option value="Assembly">Assembly</option>
+          <option value="Matlab">Matlab</option>
+          <option value="Scala">Scala</option>
+          <option value="Ruby">Ruby</option>
+          <option value="HTML">HTML</option>
+          <option value="Arduino">Arduino</option>
+          <option value="Shell">Shell</option>
+          <option value="Perl">Perl</option>
+          <option value="Swift">Swift</option>
+          <option value="Objective-C">Objective-c</option>
+          <option value="Lua">Lua</option>
+          <option value="Fortran">Fortran</option>
+          <option value="SQL">SQL</option>
+          <option value="Haskell">Haskell</option>
+          <option value="VHDL">VHDL</option>
+          <option value="Visual Basic">Visual Basic</option>
+          <option value="Cuda">Cuda</option>
+          <option value="Rust">Rust</option>
+          <option value="Verilog">Verilog</option>
+          <option value="D">D</option>
+          <option value="Pascal/Delphi">Pascal/Delphi</option>
+          <option value="Julia">Julia</option>
+          <option value="Lisp">Lisp</option>
+          <option value="Prolog">Prolog</option>
+          <option value="LabView">LabView</option>
+          <option value="Erlang">Erlang</option>
+          <option value="SAS">SAS</option>
+          <option value="Clojure">Clojure</option>
+          <option value="Cobol">Cobol</option>
+          <option value="ABAP">ABAP</option>
+          <option value="TCL">TCL</option>
+          <option value="Ada">Ada</option>
+          <option value="Scheme">Scheme</option>
+          <option value="J">J</option>
+          <option value="Ocaml">Ocaml</option>
+          <option value="Ladder Logic">Ladder Logic</option>
+          <option value="Groovy">Groovy</option>
+          <option value="Dart">Dart</option>
+          <option value="CoffeeScript">CoffeeScript</option>
+          <option value="Forth">Fort</option>
+          <option value="Kotlin">Kotlin</option>
+          <option value="Elixir">Elixir</option>
+          <option value="F#">F#</option>
+          <option value="Eiffel">Eiffel</option>
+          <option value="Elm">Elm</option>
+          <option value="WebAssembly">WebAssembly</option>
+          <option value="TypeScript">TypeScript</option>
+          <option value="Raku">Raku</option>
+        </datalist>
+        </select>
+      </div>
+      <div>
+      <label>Hversu vel kanntu forritunarmálið á skalanum 0-10?</label>
+        <input type="range" id="volume" name="volume"
+               min="0" max="10">
+        </div>
+      <label>Hvað finnst þér best við forritunarmálið?
+        <input type="text" required>
+      </label>
+      <label>Hvað finnst þér verst við forritunarmálið?
+        <input type="text" required>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Forritunarmál sem mig langar að læra</legend>
+      <div>
+        <label>Forritunarmál sem ég kann best</label>
+        <input id="forritunarmál" type="text" list="forritunarmál">
+      </div>
+      <div>
+        <label for="störf">Hvers vegna langar þig að læra þetta forritunarmál</label>
+        <select id="störf" name="störf">
+          <option value="Vegna vinnu">Vegna vinnu</option>
+          <option value="Fyrir akademísk störf">Fyrir akademísk störf</option>
+          <option value="Forvitni">Forvitni</option>
+        </select>
+      </div>
+      <div>
+        <label for="comment">Annað:</label>
+        <textarea name="comment" id="comment"></textarea>
+      </div>
+    </fieldset>
+      <fieldset>
+        <legend>Hafa samband</legend>
+        <div>
+          <label>
+            <input name="register" type="checkbox">
+            Það má hafa samband við mig
+          </label>
+        </div>
+        <label>
+          Netfang:
+          <input type="text" id="name" >
+        </label>
+        <label>
+          Sími:
+          <input type="text" id="phone"  placeholder="000-0000">
+        </label>
+        <div>
+          <label for="comment">Athugasemdir:</label>
+          <textarea name="comment" id="comment"></textarea>
+        </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,208 @@
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif,'Inter-Bold';
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+    margin-left: -100000px;
+  }
+
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1200px;
+    margin-bottom: 1rem;
+    height: 100%;
+  }
+  
+  header {
+    background-color: #00bfff;
+  }
+  
+  header h1{
+    max-width: 1200px;
+    margin:0 auto;
+  }
+  .content > nav {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: normal;
+   }
+  
+  .content > main {
+    flex: 1;
+    margin-top: 1rem;
+    
+  }
+  
+footer {
+    background-color: #00bfff;
+    min-height: 50px;
+    min-width: 1200px;
+    margin:0 auto;
+  }
+  
+  
+
+  legend{
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+
+  
+  a {
+    color: #000000;
+    text-decoration: underline;
+    
+  }
+  
+  nav {
+    text-align: left;
+    padding-left: 2rem;
+    font-size: 24px;
+}
+
+nav ul{
+  list-style: none;
+  text-align: left;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav a {
+  display: block; 
+  text-decoration: none; 
+}
+
+li {
+  list-style-position: inside;
+  padding-left: 2rem;
+  margin-left: 1rem;
+ }
+  
+  main{
+    text-align: left;
+  }
+  
+
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 4px;
+    margin: -50px;
+}
+
+tr:nth-child(even){
+    background-color: #afebff;
+}
+
+tr:nth-child(odd){
+    background-color: white;
+}
+
+img {
+float: left;
+}
+
+ol li{
+    list-style-type:decimal;
+    position:left;
+    margin-left: -2rem;
+}
+
+div {
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: auto;
+}
+
+
+input[type=text], select {
+  width: 250px;
+  padding: 10px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=text] {
+  width: 250px;
+  padding: 10px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 250px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=list] {
+  width: 250px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=checkbox] {
+  margin-left: 1rem;
+}
+
+fieldset{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+p{
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+input[type=email] {
+  width: 300px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=tel] {
+  width: 300px;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}

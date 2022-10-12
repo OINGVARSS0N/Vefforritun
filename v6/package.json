@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "browser-sync": "^2.27.10",
+    "concurrently": "^7.4.0",
+    "sass": "^1.55.0",
+    "sass-lint-auto-fix": "^0.21.2",
+    "sass-watch": "^0.1.0",
+    "stylelint": "^13.7.0",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^22.0.0"
+  },
+  "name": "v6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "browser-sync": "browser-sync start --server --files index.html styles.css",
+    "sass": "sass styles.scss styles.css -w",
+    "dev": "concurrently npm:sass npm:browser-sync",
+    "lint-css": "stylelint styles.css",
+    "lint-scss": "stylelint styles.scss --syntax scss",
+    "sass-watch": "sass --watch *.scss styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,27 +1,27 @@
 
 .body {
-    color: var(--color-text);
-    font-size: var(--font-base-body-px);
-    line-height: 1.5;
-    font-family: var(--font-family-base);
-  }
-  
-  h1, h2, h3 {
-    font-family: var(--font-family-heading);
-  }
-  
-  img {
-    max-width: 100%;
-  }
-  
-  main {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 100%;
-    gap: var(--vertical-space);
-    margin: var(--vertical-space) auto;
-    width: calc(100% - 2 * var(--offset));
-    max-width: var(--max-width);
-  }
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+  font-size: var(--font-base-body-px);
+  line-height: 1.5;
+}
 
-  
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-heading);
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  display: grid;
+  gap: var(--vertical-space);
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  margin: var(--vertical-space) auto;
+  max-width: var(--max-width);
+  width: calc(100% - 2 * var(--offset));
+}

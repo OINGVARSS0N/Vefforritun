@@ -110,7 +110,8 @@ const numberSemInt = parseInt(numOfCups);
     if (numOfCups === null) {
       return;
     }
-  } while (confirm(`Spila aftur?`))
+  } while 
+  (confirm(`Spila aftur?`))
 
 }
 

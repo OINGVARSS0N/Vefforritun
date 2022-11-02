@@ -10,7 +10,8 @@
     "dev": "browser-sync start --server --files main.js **/*.js styles.css index.html",
     "copy:html": "cpy ./*.html ./build/",
     "copy:js": "cpy ./*.js ./build/",
-    "copy:.js": "cpy ../*.js ./build/",
+    "copy:jslib": "cpy ./lib/*.js ./build/",
+    "copy:css": "cpy ./*.css ./build/",
     "build": "concurrently npm:copy:*"
   },
   "author": "",

@@ -49,25 +49,33 @@ document.querySelector('#max_cups').innerText = MAX_NUM_OF_CUPS;
  * @returns 
  */
 function onCupClick(e) {
-  const numClicked = e.target.dataset.num;
   const leikir = document.getElementById('games');
   state.played = state.played+1;
   leikir.innerText = state.played
 
-  const cup = document.querySelector('.cups').children[numClicked-1]
+  e.preventDefault;
+  let gisk = parseInt(e.target.dataset.num);
+  const cup = document.querySelector(".cups").children[gisk-1];
+  const cup_svg = cup.querySelector(".cup__svg");
 
-  if(e.target.dataset.num == state.currentCup) {
-    
-    cup.classList.add('ball')
-    
+  if (gisk === state.currentCup){
+    emptyElement(cup_svg);
+    console.log("rett");
+    cup_svg.classList.add('ball')
+    let stig = document.getElementById('points')
+    state.points += state.currentPointsAvailable;
+    stig.innerText = state.points;
+    console.table(state);
+  } else {
+    emptyElement(cup_svg);
+    console.log("rangt");
   }
+
   setTimeout(function (){
-  
-  showScreen('waiting');
-              
-  }, SHOW_WAITINGSCREEN_TIME)
+  showScreen('waiting');}, SHOW_WAITINGSCREEN_TIME)
   
 }
+
 
 /**
  * Tæmir `parent` og býr til `num` bollum og setur þangað inn.
@@ -81,6 +89,8 @@ function createCups(num, parent) {
     const cup = createCup(i, svg, onCupClick);
     parent.appendChild(cup);
   }
+
+  state.currentPointsAvailable = num-1;
 }
 
 /**

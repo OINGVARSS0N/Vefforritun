@@ -116,9 +116,10 @@
   
   .ball {
     display: block;
-    margin: auto;
     border-radius: 100%;
     width: calc(var(--cup-width) / 2);
+    margin: auto;
+    height:calc(var(--cup-heigt)/2);
     aspect-ratio: 1 / 1;
     background-color: var(--cup-color-ball);
   }

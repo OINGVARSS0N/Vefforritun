@@ -21,17 +21,16 @@ function route() {
     c.fillRect(400, 500, 300, 250);
   } else {
     document.querySelector('#app').innerHTML = `
+    <h1>Welcome to your nightmare</h1>
     <div class="player">
   <video controls>
     <source src="video/malao.mp4" type="video/mp4" />
-    <source src="video/malao.webm" type="video/webm" />
   </video>
-  <p>Hallao sorry, ýta hérna fyrir flotta teikningu</p
   </div>
 </div>
     <div>
         <a href="/?teikna=yes">
-        <div>Teikna</div>
+        <div>Fyrirgefðu, ýta hér fyrir flotta teikningu</div>
       </a>
       </div>
     `;

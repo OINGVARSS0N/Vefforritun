@@ -52,6 +52,8 @@ export function createCup(num, svg, onClick) {
   button.addEventListener('click', onClick)
   button.innerText = num.toString();
   button.dataset.num = num;
+  button.father = el;
+  button.brother = image;
 
   el.appendChild(button);
 

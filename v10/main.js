@@ -24,7 +24,7 @@ function route() {
     <h1>Welcome to your nightmare</h1>
     <div class="player">
   <video controls>
-    <source src="malao.mp4" type="video/mp4" />
+    <source src="video/malao.mp4" type="video/mp4" />
   </video>
   </div>
 </div>

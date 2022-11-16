@@ -55,9 +55,9 @@ function route() {
   </div>
 </div>
     <div>
-        <a href="/?teikna=yes">
+        <button><a href="/?teikna=yes">
         <div>Fyrirgefðu, ýta hér fyrir flotta teikningu
-        </div>
+        </div></button>
       </a>
       </div>
     `;

@@ -49,17 +49,17 @@ function route() {
     document.querySelector('#app').innerHTML = `
     <h1>Welcome to your nightmare</h1>
     <div class="player">
-  <video controls>
+    <video controls>
     <source src="/malao.mp4" type="video/mp4" />
-  </video>
-  </div>
-</div>
+    </video>
+    </div>
+    </div>
     <div>
-        <button><a href="/?teikna=yes">
-        <div>Fyrirgefðu, ýta hér fyrir flotta teikningu
-        </div></button>
-      </a>
-      </div>
+    <button><a href="/?teikna=yes">
+    <div>Fyrirgefðu, ýta hér fyrir flotta teikningu
+    </div></button>
+    </a>
+    </div>
     `;
   }
 }

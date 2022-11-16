@@ -17,7 +17,7 @@
     "sass": "sass styles.scss styles.css -w",
     "dev": "concurrently npm:sass npm:browser-sync",
     "lint-scss": "stylelint styles.scss ./**/*.scss --fix",
-    "lint-css": "stylelint styles.css ./**/*.css",
+    "lint-css": "stylelint styles.css ./**/*.css --fix",
     "sass-watch": "sass --watch *.scss styles.css"
   },
   "author": "",

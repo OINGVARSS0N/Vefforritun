@@ -1,4 +1,4 @@
-import './style.css';
+import './styles.scss';
 
 function route() {
   const params = new URLSearchParams(window.location.search);

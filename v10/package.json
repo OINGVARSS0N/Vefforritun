@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "lint": "eslint ./**/*.js",
+    "lint": "eslint ./**/*.js --fix",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sass": "sass styles.scss styles.css -w"
   },
   "devDependencies": {
     "vite": "^3.2.3"
